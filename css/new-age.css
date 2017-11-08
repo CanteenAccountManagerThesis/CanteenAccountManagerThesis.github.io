@@ -39,7 +39,7 @@ h6 {
   letter-spacing: 1px; }
 
 p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
   margin-bottom: 20px; }
 
@@ -120,6 +120,9 @@ header.masthead {
   color: white;
   background: url("../img/9.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   opacity: 0.9;    
   }
   header.masthead .header-content {
@@ -127,7 +130,7 @@ header.masthead {
     margin-bottom: 100px;
     text-align: center; }
     header.masthead .header-content h1 {
-      font-size: 100px; }
+      font-size: 60px; }
   header.masthead .device-container {
     max-width: 325px;
     margin-right: auto;
@@ -159,27 +162,24 @@ section.download {
   section.download h2 {
     font-size: 50px;
     margin-top: 0; }
-  section.download .badges .badge-link {
-    display: block;
-    margin-bottom: 25px; }
-    section.download .badges .badge-link:last-child {
-      margin-bottom: 0; }
-    section.download .badges .badge-link img {
-      height: 60px; }
     @media (min-width: 768px) {
-      section.download .badges .badge-link {
-        display: inline-block;
-        margin-bottom: 0; } }
-  @media (min-width: 768px) {
     section.download h2 {
       font-size: 70px; } }
+  section.download h4 {
+      text-align: left;
+      color:black; }
+ 
+    
 
 section.features .section-heading {
   margin-bottom: 100px; }
   section.features .section-heading h2 {
     margin-top: 0; }
   section.features .section-heading p {
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+    }
+  
+  
 
 section.features .device-container,
 section.features .feature-item {
@@ -212,21 +212,34 @@ section.cta {
   padding: 250px 0;
   background-image: url("../img/bg-cta.jpg");
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   section.cta .cta-content {
     position: relative;
     z-index: 1; }
     section.cta .cta-content h2 {
       font-size: 50px;
-      margin-top: 0; 
-      color:white}
+      text-align: center;
+      color:#fcbd20;}
+      @media (min-width: 992px) {
+      section.cta .cta-content h2 {
+        font-size: 120px;
+        text-align: left;
+        margin-top: 0; 
+        color:#fcbd20} }
      section.cta .cta-content p {
-      font-size: 18px;
-      margin-top: 0; 
-      color:white}
+        font-size: 18px;
+        margin-top: 0; 
+        color:white;}
+        @media (min-width: 992px) {
+        section.cta .cta-content p {
+          margin-left:120px;
+        }}
+    section.cta .cta-content hr {
+        align-self: center; }
+        @media (min-width: 992px) {
+        section.cta .cta-content hr {
+          margin-left:200px;
+        }}
   section.cta .overlay {
     position: absolute;
     top: 0;
@@ -314,5 +327,7 @@ footer {
 
 
 #rowMine{
-  margin-left:100px
-}
+  margin-left:0px; }
+  @media (min-width: 992px) {
+    #rowMine{
+      margin-left: 100px;}} 
