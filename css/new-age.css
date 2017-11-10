@@ -226,7 +226,7 @@ section.features .section-heading {
     text-align: center;
     padding-bottom: 30px ;
   }
-  section.features img {
+  section.features img{
     align-self: center;
     max-height: 100px; 
     max-width: 100px;
@@ -236,12 +236,16 @@ section.features .section-heading {
     @media (min-width:992px) {
       section.features img{
         align-self: center;
-        height: 100px; 
-         width: 100px;
+         
+        width: 100px;
       }
     }
   section.features .section-heading p {
     margin-bottom: 0; 
+    }
+
+    #img1{
+      width: 200px;
     }
   
   
